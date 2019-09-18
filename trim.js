@@ -39,6 +39,7 @@ v1.0 coded
  let  cs=/((\[\[\[(?:.*?)\]\]\])|(\{\{\{(?:.*?)\}\}\})|(>>>(?:.*?)>>>))|([^ ]+)/g //add the set back >>> cmd a b >>>
  function __s(d){
   //cmdlinesplit
+  if(!cs.test(d))return []
   return d.match(cs)
  }
   
