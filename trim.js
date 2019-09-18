@@ -46,4 +46,5 @@ v1.0 coded
  root.__c=__c
  root.__w=__w
  root.__l=__l
+ root.__s=__s
 })(this);
