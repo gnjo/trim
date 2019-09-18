@@ -36,6 +36,11 @@ v1.0 coded
   return ary
  }
  ;
+ let  cs=/((\[\[\[(?:.*?)\]\]\])|(\{\{\{(?:.*?)\}\}\})|(>>>(?:.*?)>>>))|([^ ]+)/g //add the set back >>> cmd a b >>>
+ function __s(d){
+  //cmdlinesplit
+  return d.match(cs)
+ }
   
  root.__n=__n 
  root.__c=__c
